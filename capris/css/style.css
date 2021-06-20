@@ -1,0 +1,463 @@
+/* コードの文字化けを防ぐ */
+@charset "utf-8";
+
+/* 共通部分 */
+/* ------------------------- */
+
+/* ユーザーの設定した文字サイズを正しく反映 */
+html {
+    font-size: 100%;
+}
+
+/* 書体の指定、行の高さの指定、色の指定 */
+body {
+    font-family: "Yu-Gothic Medium", "遊ゴシック Medium", YuGothic, "遊ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #ff8059;
+}
+
+/* <a> タグの傍線の指定 */
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* header */
+
+.header-main {
+    padding-left: 20px;
+    background-color: rgb(127, 236, 255);
+}
+
+.ul-list {
+    display: flex;
+    padding-left: 20px;
+    list-style: none;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 480px) {
+    .ul-list {
+        display: flex;
+        padding-left: 5px;
+        list-style: none;
+        font-size: 13px;
+        justify-content: space-around;
+    }
+}
+
+.list {
+    margin: auto 20px;
+}
+
+.logo {
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        border-radius: 50px;
+        margin-top: 5px;
+        width: 50px;
+    }
+}
+
+/* main-page */
+
+.main-page {
+    height: 80vh;
+    background: rgb(0, 34, 65);
+    position: relative;
+}
+
+@media screen and (max-width: 480px) {
+.main-page {
+    height: 30vh;
+    background: rgb(0, 34, 65);
+    position: relative;
+    }
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+.first-title {
+    text-align: center;
+    padding-top: 280px;
+    font-size: 42px;
+    color: rgb(255, 251, 21);
+}
+
+@media screen and (max-width: 480px) {
+.first-title {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 20px;
+    color: rgba(0, 217, 255, 0.959);
+    }
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  } 
+/* team */
+
+.team-main {
+    background-color: rgba(111, 226, 255, 0.3);
+}
+
+.team {
+    /* height: 170vh; */
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .team {
+        height: 110vh;
+        text-align: center;
+    } 
+}
+
+.team-img {
+    margin-top: 90px;
+}
+
+@media screen and (max-width: 480px) {
+.team-img {
+    margin-top: 30px;
+    }
+}
+
+/* .sub-title {
+    color: #ff8059;
+    margin-top: 10vh;
+    font-size: 28px;
+} */
+
+.team-text {
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;
+    background-color: rgba(94, 177, 255, 0.575);
+}
+
+@media screen and (max-width: 480px) {
+    .team-text {
+        color: black;
+        font-size: 15px;
+        text-align: left;
+        margin-top: 10px;
+        background-color: rgba(21, 140, 219, 0.205);
+    }
+}
+
+.play-text {
+    color: rgba(255, 42, 42, 0.932);
+    margin-top: 50px;
+}
+
+.button2 {
+    font-size: 1rem;
+    background-color: rgba(58, 255, 255, 0.932);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+@media screen and (max-width: 480px) {
+.button2 {
+    font-size: 0.8rem;
+    background-color: rgba(58, 255, 255, 0.932);
+    border-radius: 10px;
+    padding: 3px 10px;
+}
+}
+
+.sliderbox img {
+    width: 800px;
+    height: 500px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+.sliderbox img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    }
+    
+}
+
+/* member */
+
+/* .member-main {
+    height: 180vh;
+} */
+
+@media screen and (max-width: 480px) {
+    .member-main {
+        height: 90vh;
+    }
+}
+
+.member-title {
+    font-size: 28px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+@media screen and (max-width: 480px) {
+    .member-title {
+        font-size: 20px;
+        text-align: center;
+        background-color: rgba(255, 114, 79, 0.3);
+    }
+}
+
+.member-pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 480px) {
+    .pic {
+        float: left;
+        width: 180px;
+    }
+}
+
+/* チーム情報 */
+
+/* .about-team {
+    background-color: #98ff7e8f;
+    height: 50vh;
+}
+
+.about-title {
+    font-size: 28px;
+    text-align: center;
+    margin: 50px auto;
+    color: #ff8059;
+} */
+
+.about-content {
+    margin: 50px auto;
+    color: black;
+}
+
+/* team-member */
+
+.team-members {
+    text-align: center;
+    background-color: rgba(104, 232, 255, 0.507);
+}
+
+@media screen and (max-width: 480px) {
+    .team-members {
+        margin: 0 auto;
+        width: 300px;
+    }
+}
+
+.members-font {
+    font-size: 32px;
+    margin: 0 auto;
+    color: rgba(253, 51, 51, 0.884);
+}
+
+@media screen and (max-width: 480px) {
+    .members-font {
+        font-size: 20px;
+    }
+}
+
+.player {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    display: inline-block;
+    color: black;
+}
+
+.possition {
+    font-size: 20px;
+    color: rgb(89, 55, 241);
+}
+
+/* レイアウト用のcss */
+.bg-color1 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.bg-color2 {
+    background-color: rgba(103, 207, 255, 0.486);
+}
+
+.bg-color1 {
+    position: relative;
+    background-color: rgba(0, 153, 255, 0.973);
+}
+
+.bg-color1::before {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 150px 100vw ;
+  border-color: transparent transparent rgba(103, 207, 255, 0.486) transparent;
+}
+/* contact */
+
+.button {
+    font-size: 1.375rem;
+    background-color: rgba(255, 235, 58, 0.932);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .button {
+        font-size: 1rem;
+        background-color: rgba(161, 255, 227, 0.767);
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+    
+    .button:hover {
+        background-color: rgba(161, 255, 227, 0.5);
+    }
+    
+}
+
+.button:hover {
+    background-color: rgba(255, 235, 58, 0.685);
+}
+
+.sub-title {
+    text-align: center;
+    padding-top: 50px;
+    margin: 0px auto;
+    font-size: 32px;
+    color: rgba(255, 127, 42, 0.932);
+}
+
+@media screen and (max-width: 480px) {
+    .sub-title {
+        text-align: center;
+        padding-top: 10px;
+        margin: 0px auto;
+        font-size: 20px;
+        color: rgba(255, 42, 42, 0.932);
+    }
+}
+
+.contact {
+    height: 85vh;
+    background-image: url(../images/contact-img.jpeg);
+    background-color:rgba(255,255,255,0.3);
+    background-blend-mode:lighten;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        height: 90vh;
+        background-image: url(../images/contact-img.jpeg);
+        background-color:rgba(255,255,255,0.3);
+        background-blend-mode:lighten;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+}
+
+.wrapper {
+    color: rgba(255, 42, 42, 0.932);
+}
+
+form div {
+    margin-bottom: 14px;
+}
+
+label {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255, .5);
+    border: 1px #fff solid;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.message {
+    background: rgba(255,255,255, .5);
+    border: 1px #fff solid;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+
+@media screen and (max-width: 480px) {
+    textarea {
+        width: 60%;
+        max-width: 480px;
+        height: 4rem;
+    }
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.form-text {
+    color: black;
+}
+
+/* footer */
+
+.footer-bg {
+    height: 40px;
+    background-color: rgb(127, 236, 255);
+}
+
+.footer {
+    text-align: center;
+    padding-top: 7px;
+    color: rgba(0, 0, 0, 0.247);
+}

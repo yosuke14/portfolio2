@@ -1,0 +1,360 @@
+@charset "UTF-8";
+@media (max-width: 375px) {
+  html {
+    font-size: 100%;
+  }
+  body {
+    font-family: "Yu Gothic Medium", "遊ゴシック Medium", YuGothic, "遊ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: black;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, transparent), color-stop(90%, #248affb0));
+    background: linear-gradient(transparent 20%, #248affb0 90%);
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  .title {
+    text-align: center;
+    padding: 0 0.5em;
+    font-size: 24px;
+    font-family: 'Philosopher', serif;
+    color: #000000;
+    text-shadow: 0 0 5px white;
+    background: -webkit-repeating-linear-gradient(-45deg, #f5f8ff15, #e4e8ff1c 3px, #d1d9ff17 3px, #4d71ff23 8px);
+    background: repeating-linear-gradient(-45deg, #f5f8ff15, #e4e8ff1c 3px, #d1d9ff17 3px, #4d71ff23 8px);
+  }
+  /* フェードイン JavaScript */
+  .js-animation {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .js-animation.is-show {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  footer {
+    text-align: center;
+    background-color: rgba(78, 140, 255, 0.678);
+    font-size: 4px;
+    padding: 5px;
+  }
+  /* header */
+  .main-nav {
+    font-size: 0.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-top: 3px;
+    list-style: none;
+  }
+  .main-nav li {
+    margin-left: 20px;
+  }
+  .main-nav a {
+    color: rgba(47, 85, 253, 0.76);
+  }
+  .main-nav a:hover {
+    color: #0745ff;
+  }
+  .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: rgba(159, 209, 255, 0.185);
+  }
+  .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+  }
+  /* main-content */
+  .main-content {
+    height: 35vh;
+    /* min-height: 100vh; */
+    /* min-width: 100vh; */
+    background-image: url(images/main-bg.png);
+    background-size: contain;
+    opacity: 0.7;
+  }
+  .main-profile {
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+  }
+  .main-profile .profile {
+    width: 120px;
+    margin: 0 auto;
+    padding: 2px 0;
+    font-size: 6px;
+    font-family: 'Philosopher', serif;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+  .main-text {
+    width: 280px;
+    color: #2e229e;
+    margin-top: 20px;
+    padding: 10px 10px 3px 0;
+    font-size: 14px;
+    font-family: 'Philosopher', serif;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(80%, #b5cfff91));
+    background: linear-gradient(transparent 50%, #b5cfff91 80%);
+  }
+  /* about */
+  .about-content {
+    padding-top: 10px;
+  }
+  .portfolio {
+    display: inline-block;
+    text-align: left;
+    font-size: 14px;
+  }
+  .sub-profile {
+    text-align: left;
+    margin-left: auto;
+  }
+  .about-me {
+    border-radius: 100px;
+    margin: 20px 0;
+  }
+  .my-title {
+    padding-left: 200px;
+    font-size: 14px;
+    margin-right: 150px;
+    margin-top: 50px;
+  }
+  .hobbes {
+    display: block;
+  }
+  .hidden-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* 全体 */
+  .hidden-box {
+    margin: 15px;
+    /* padding: 0; */
+    width: 320px;
+    text-align: center;
+    position: relative;
+    padding: 1rem .5rem;
+  }
+  /* ボタン装飾 */
+  .hidden-box label {
+    width: 70px;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Caveat', cursive;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+  .hidden-box label::before,
+  .hidden-box label::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    content: '';
+    /* background-image: -webkit-gradient(linear, right top, left top, from(#30cfd0), to(#330867)); */
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(136, 255, 209, 0.651)), to(#7aa4ff));
+    background-image: linear-gradient(to left, rgba(136, 255, 209, 0.651) 0%, #7aa4ff 100%);
+  }
+  .hidden-box label::before {
+    top: 0;
+  }
+  .hidden-box label::after {
+    bottom: 0;
+  }
+  /* ボタンホバー時 */
+  .hidden-box label:hover {
+    background: rgba(56, 182, 255, 0.562);
+    -webkit-transition: background-color 1s ease 0.1s;
+    transition: background-color 1s ease 0.1s;
+  }
+  /* チェックを見えなくする */
+  .hidden-box input {
+    display: none;
+  }
+  /* 中身を非表示にする */
+  .hidden-box .hidden-show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
+  /* クリックで中身の表示 */
+  .hidden-box input:checked ~ .hidden-show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(40%, #4faaff7c));
+    background: linear-gradient(transparent 30%, #4faaff7c 40%);
+  }
+  .text-shadow {
+    font-size: 14px;
+    color: black;
+    text-align: left;
+  }
+  /* work */
+  .work-content {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+  }
+  /* skill */
+  .skill {
+    margin-top: 20px;
+    padding-bottom: 50px;
+    border-style: none none dotted none;
+  }
+  .skill-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0 0 0;
+  }
+  .skill-res-text {
+    text-align: left;
+  }
+  .skill-html {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0 0 10px;
+  }
+  .skill-js {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .skill-php {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0 0 20px;
+  }
+  .skill-wp {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0 0 10px;
+  }
+  .skill-sql {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0 0 20px;
+  }
+  .skill-infra {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+  }
+  /* performances */
+  .performances {
+    height: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sub-text {
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Philosopher', serif;
+  }
+  .sites {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sites-text {
+    margin: 0px;
+    font-size: 12px;
+  }
+  .sites-img {
+    height: 200px;
+    width: 220px;
+  }
+  /* section-contact */
+  .contact {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .contact-discription {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0 4%;
+  }
+  /* フォームの指定 */
+  form div {
+    margin-bottom: 14px;
+  }
+  label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+  input [type="text"],
+  input [type="email"],
+  textarea,
+  .form-box {
+    background: white;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 　10px;
+    font-size: 1rem;
+  }
+  input [type="text"],
+  input [type="email"] {
+    width: 100%;
+    max-width: 240px;
+  }
+  textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+  }
+  input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .btn {
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: 600;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+  }
+  .btn:hover {
+    -webkit-box-shadow: 0 0 10px black;
+            box-shadow: 0 0 10px black;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

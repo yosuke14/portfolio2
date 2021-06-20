@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caprisのホームページ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ress.css の設定 -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- Goodle fonts の指定 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
+</head>
+<body>
+    <header class="header-main">
+        <ul class="ul-list">
+            <a href=""><img src="images/logo-img.jpg" alt="" width="100px" class="logo"></a>
+            <li class="list"><a href="#club">クラブ</a></li>
+            <li class="list"><a href="#member">選手紹介</a></li>
+            <!-- <li class="list"><a href="">チーム情報</a></li> -->
+            <li class="list"><a href="#contact">CONTACT</a></li>
+        </ul>
+    </header>
+    <section class="main-page">
+        
+        <div class="first-title" id="particles-js">
+            caprisのホームページへようこそ！
+        </div>
+    
+    </section>
+
+    <section class="team-main" id="club">
+        <div class="team">
+            <div class="sliderbox">
+                <img src="images/team-img1.jpeg" alt="チーム写真" width="800px" class="team-img" id="slideshow">
+            <!-- スライダーの開始ボタン -->
+            <input type="button" value="開始/停止" id="startstopbtn" class="button2">
+            </div>
+            <!-- 紹介文章 -->
+            <h1 class="sub-title">Capris（From:山口）</h1>
+            <p class="team-text"> 
+                エンジョイカテゴリーにて活動しています。<br>
+                チーム発足のきっかけは、2年前の明治安田生命主催のフットサルフェスタに出場したことです。<br>
+                当時は初対面のメンバーもいたり、寄せ集めのチームでありながら中国大会にも出場し3位という結果を残しました。<br>
+                大会をきっかけに出会ったメンバーと現在も毎月地元のフットサル施設での大会にも出場しています。<br>
+                プレーはもちろん、対戦相手に親しみを持ちピッチ内外両方にて楽しむチームです。<br>
+            </p>
+            <div>
+                <h2 class="sub-title">活動状況</h2> 
+                <p class="team-text">地元宇部市のココランドにて開催されるソサイチに毎月出場しています。<br>
+                    チームメンバーは各々山口県内のリーグに登録しているチームにて活動しています。<br>
+                    チームの雰囲気の良さなどもあり、県内のミックスカテゴリーのチームとも練習試合なども行っています。<br>
+                    もしエンジョイの男女混合のミックスカテゴリーのチームで気になれば気軽に連絡をして下さい。<br>
+                    一緒にフットサルを楽しみましょう！！
+                 </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="member-main" id="member">
+        <p class="member-title">選手紹介</p>
+        <div class="member-pic">
+            <a href="members/num45.html"><img src="images/mem-1.jpg" alt="背番号45" width="400px" class="pic"></a>
+            <a href="members/num70.html"><img src="images/mem-2.jpg" alt="背番号70" width="400px" class="pic"></a>        
+            <a href="members/num27.html"><img src="images/mem-3.jpg" alt="背番号27" width="400px" class="pic"></a>
+            <a href="members/num21.html"><img src="images/mem-4.jpg" alt="背番号21" width="400px" class="pic"></a>
+            <a href="members/num55.html"><img src="images/mem-5.jpg" alt="背番号55" width="400px" class="pic"></a>
+            <a href="members/num5.html"><img src="images/mem-6.jpg" alt="背番号5" width="400px" class="pic"></a>
+            <a href="members/num14.html"><img src="images/mem-7.jpg" alt="背番号14" width="400px" class="pic"></a>
+            <a href="members/num17.html"><img src="images/mem-8.jpg" alt="背番号17" width="400px" class="pic"></a>
+            <a href="members/num25.html"><img src="images/mem-9.jpg" alt="背番号25" width="400px" class="pic"></a>
+            <a href="members/num23.html"><img src="images/mem-10.jpg" alt="背番号23" width="400px" class="pic"></a>
+        </div>
+    </section>
+
+    <!-- <section class="about-team">
+        <div class="about-content">
+            <p class="about-title">チーム情報</p>
+            
+        </div>
+    </section> -->
+
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <h2 class="sub-title" style="color: black;">Contact</h2>
+            <form action="#" class="formtitle">
+                <div class="form-text">
+                    <label for="name">お名前</label>
+                    <input type="text" name="your-name" id="name">
+                </div>
+
+                <div class="form-text">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" name="your-email" id="email">
+                </div>
+
+                <div class="form-text">
+                    <label for="message">メッセージ</label>
+                    <textarea name="yuor-message" id="message" class="message"></textarea>
+                </div>
+                
+                <input type="submit" class="button" value="送信">
+            </form>
+        </div><!-- wrapper -->
+    </section>
+    <footer class="footer-bg">
+        <div class="footer">
+            @yosuke
+        </div>
+    </footer>
+    <!-- <script src="script.js"></script> -->
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
+    <script src="slide.js"></script>
+</body>
+</html>
